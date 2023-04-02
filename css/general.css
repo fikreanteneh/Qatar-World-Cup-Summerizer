@@ -1,0 +1,189 @@
+.header{
+    align-items: center;
+    background-color: black;
+    border-bottom: 3px solid white;
+    display: flex;
+    justify-content: space-between;
+    max-height:3rem;
+    padding: 10px 5px ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.header__logo{
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+}
+.header__image{
+    border-radius: 50%;
+    height: 4rem;
+    padding: 5px, 5px, 5px, 5px;
+    width: 4rem ;
+}
+.header__title{
+    font-size: 3em;
+    margin: auto;
+}
+.header__nav-bar{
+    margin-right: 1rem;
+}
+.header__menu{
+    display: flex;
+}
+.header__items{
+    list-style: none;
+    padding: 0.5rem;
+}
+.header__items--selected{
+    border-radius: 5px;
+    box-shadow: 0 0 15px;
+}
+.header__links{
+    color: white;
+    font-size: 1.5rem;  
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none;
+}  
+.header__items:hover{
+    background-color: rgb(51, 132, 253);
+    border-radius: 4px;
+    transition: 0.4s;
+    
+}
+.burger{
+    display: none;
+}
+.burger__line{
+    background-color: antiquewhite;
+    margin-bottom:0.5rem ;
+    padding: 0.1rem;
+    width: 2.5rem;
+}
+@media (max-width:1080px) {
+    .header{
+        max-height: 2rem;
+    }
+    .header__image{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .header__title{
+        font-size: 2.2rem;
+    }
+    .burger{
+        display: block;
+        padding: 0.5rem;
+    }
+    .burger:hover{
+        background-color: rgb(29, 29, 29);
+    }
+    .header__nav-bar{
+        display: none;
+    }
+    .header__nav-bar.active{
+        display: flex;
+        position: fixed;
+        top: 3.4rem;
+        left: 0;
+        width: 100%;
+        transition: 1s;
+
+    }
+    .header__menu{
+        background-color: rgb(19, 19, 26);
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .header__items{
+        border-bottom: 1px solid white;
+        width: 100%;
+        padding: 0;
+    }
+    .header__items--selected{
+        border-radius: 5px;
+        box-shadow: 0 0 0 0;
+    }
+    .header__links{
+        display: block;
+        font-size: 1.5rem;
+        width: 100%;
+    
+    }
+    .header__items:hover{
+        background-color:rgb(8, 8, 89);
+        border-radius: 0;
+        transition: 0.3s;
+    }
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1rem;
+    background-color:rgb(4, 4, 20) ;
+ }
+.footer__card{
+    margin: 0;
+}
+ .footer__name{
+    font-size: 2.2rem;
+    text-align: left;
+ }
+ .footer__link{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.25rem;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+ }
+ .footer__item{
+    text-align: left;
+	padding: 0 0 5px 35px;
+    margin-bottom: 0.5rem;
+	list-style: none;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 1.58em;
+ 
+ }
+ .footer__item:hover{
+    background-color: rgb(66, 66, 67);
+    border-radius: 5px;
+    
+ }
+ .footer__item--phone{
+    background-image: url("../images//phone.png");
+ }
+ .footer__item--email{
+    background-image: url("../images//email.png");
+ }
+ .footer__item--location{
+    background-image: url("../images//location.png");
+ }
+ .footer__item--telegram{
+    background-image: url("../images//telegram.png");
+ }
+ .footer__item--fifa{
+    background-image: url("../images//fifa.png");
+ }
+ .footer__item--wiki{
+    background-image: url("../images//wikipedia.jpg");
+ }
+ .footer__item--page{
+    background-image: url("../images//cup.png");
+ }
+ .bottom-text{
+    width:100%;
+    font-size: 0.8rem;
+    border-top: 1px solid white;
+    background-color: rgb(6, 8, 21);
+    text-align: center;
+    margin: 0;
+ }

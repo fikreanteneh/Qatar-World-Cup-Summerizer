@@ -1,0 +1,188 @@
+body{
+    background-color: black;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+   
+.introduction{
+    margin-top: 6rem;
+}
+.introduction__title{
+    font-size: 3rem; 
+    margin: 0; 
+}
+.introduction__container{
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.introduction__card{
+    gap: 2rem;
+    width: 49%;
+    margin: 0.5rem auto;
+    background-color: rgb(3, 18, 31);
+    border-radius: 15px;
+}
+.introduction__card:nth-child(2){
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.introduction__description{
+    padding: 5px 10px 5px 10px ;
+    text-align: left;
+    font-size: 1.1rem;
+}
+.introduction__link{
+    color: white;
+}
+.introduction__audio{
+    max-width:25rem ;
+    margin: 0 auto;
+}
+.introduction__file{
+    width: 100%;
+}
+.introduction__image{
+    max-width: 100%;
+    border-radius: 3px; 
+}
+
+
+.stadiums{
+    background-color: rgb(4, 4, 15);
+    margin: 0.5rem;
+}
+.stadiums__title{
+    font-size: 3rem;
+    margin: 0;
+}
+.stadiums__container{
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+    width: 98%;
+    margin: 0 auto;
+    align-items: center;
+}
+.stadiums__card{
+    width: fit-content;
+    background-color: rgb(11, 10, 16);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    height: fit-content;
+}
+.stadiums__name{
+    font-size: 2.8rem;
+    margin: 0;
+    padding: 1rem;
+}
+.stadiums__figure{
+    width: fit-content;
+    margin: 0;
+}
+.stadiums__image{
+   width: 48vw;
+}
+.stadiums__caption{
+    font-weight:bolder;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0 auto;
+}
+.stadiums__container::-webkit-scrollbar{
+    width: 5px;
+}
+.stadiums__container::-webkit-scrollbar-thumb{
+    background-color: rgb(11, 11, 149);
+}
+.stadiums__container::-webkit-scrollbar-track{
+    background-color: rgb(20, 19, 21);
+}
+
+.teams{
+    background-color: rgb(4, 4, 15);
+    border-radius: 15px;
+    margin: 0.5rem;
+}
+ .teams__title{
+    font-size: 3rem;
+    margin: 0;
+ }
+ .teams__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+.teams__card{
+    width:10rem;
+    margin: 10px;
+    border-left: 8px solid white;
+}
+.teams__pot{
+    font-size: 2.4rem;
+    margin: 0;
+}
+.teams__list{
+    text-align: left;
+    font-size: 1.7rem;
+    margin: 0;
+}
+@media (max-width:1300px) {
+    .introduction__card{
+        width: 98%;
+    }
+    .stadiums__image{
+        width: 95vw;
+    }
+    .stadiums__name{
+        font-size: 1.5rem;
+    }
+    .stadiums__caption{
+        font-size: 1rem;
+    }
+    .teams__pot{
+        font-size: 1.8rem;
+    }
+    .teams__list{
+        font-size: 1rem;
+    }
+ }
+
+.music__title{
+    font-size: 3rem;
+    margin: 0;
+}
+.music__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.music__card{
+    gap: 2rem;
+    width: 48%;
+    margin: 1rem auto;
+}
+@media (max-width:1800px) {
+    .music__card{
+        width: 100%;
+    }
+    .music__name{
+        font-size: 1.2rem;
+    }
+ }
+
+ @media (max-width:640px) {
+    .introduction__title, .stadiums__title, .teams__title,.music__title{
+        font-size: 2rem;
+    }
+ }

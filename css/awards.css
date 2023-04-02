@@ -1,0 +1,112 @@
+body{
+    background-color: black;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.award{
+    margin-top: 6rem;
+}
+.award__title{
+    font-size: 3rem;
+    margin: 0;
+}
+.award__container{
+    margin: 0 0.5rem 0 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:2rem;
+}
+.award__card{
+    margin:30px auto 30px auto;
+    background-color: rgb(24, 24, 26);
+    border-radius: 15px;
+    box-shadow: 0 0 9px 0;
+    width: 100%;
+}
+.award__name{
+    font-size: 2.5rem;
+    margin: 0;
+}
+.award__figure{
+    width: 100%;
+    margin: 0;
+}
+.award__image{
+    width: 100%;
+}
+.award__caption{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.award_description{
+    text-align: left;
+    margin: 12px;
+    font-size: 1.25rem;
+}
+@media (max-width: 1400px) {
+    .award__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ @media (max-width: 720px) {
+    .award__container{
+        grid-template-columns: 1fr;
+    }
+ }
+ .dream__title{
+    font-size: 3rem;
+
+ }
+ .dream__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+ }
+ .dream__card{
+    width:fit-content;
+    margin: 1rem;
+ }
+ .dream__row:nth-child(even){
+    background-color: rgb(28, 28, 28);
+}
+.dream__row:nth-child(odd){
+    background-color: rgb(15, 15, 15);
+}
+.dream__column{
+    width: 16rem;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0.3rem;
+}
+ .dream__image{
+    max-width: 30rem;
+ }
+.dream__caption{
+    font-size: 2rem;
+}
+@media (max-width:540px) {
+    .dream__column{
+        font-size: 1.2rem;
+    }
+    .dream__image{
+        width: 100%;
+    }
+ }
+ @media (max-width:740px) {
+    .award__title, .dream__title{
+        font-size: 2.2rem;
+    }
+    .award__name{
+        font-size: 1.8rem;
+    }
+    .award__caption{
+        font-size: 1.2rem;
+    }
+    .award_description{
+        font-size: 1rem;
+    }
+ }
